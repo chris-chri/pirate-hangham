@@ -1,0 +1,146 @@
+/* Most of the things on the css page i have done my self. on the animation i used videos and chatgbt for help */
+
+body{
+    background-color: rgb(8, 105, 252);
+    
+}
+/* yep,just centering the content */
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+/* very boring stuff*/
+.heading{
+    font-size: 0.90em;
+    font-family: "press Start 2P";
+    height: 100px;
+    position: absolute;
+    margin-left: 160;
+    color: rgb(27, 0, 150);
+}
+
+.picture{
+    width: 100px;
+}
+ /* I can prodly say that i did everything on the start button by myself with no videos or chatgbt. it works fien and looks nice.  */
+#startBn{
+    text-align: center;
+    color: rgb(27, 0, 150);
+    font-size: 0.90em;
+    font-family: "press Start 2P";
+    border-style: 2px outset;
+    border-radius: 17px;
+    border-color:lightskyblue;
+    border-width: 10px;
+    background-color: bisque;
+    padding:5px;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+}
+/* until this point i have used videos on how to design the waves*/
+/* makeing sure that ll the waves stay at the bottom of the webpage. */
+.ocean{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+/* I watched a video on how to do this*/
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('wave.png');
+    background-size: 1000px 100px;
+    height: 100px;
+    width: 100%;
+}
+/* I watched a video on how to do this*/
+.wave.stlye1{
+    animation: animate 14s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 1s ;
+    bottom: 0;
+
+}
+/* I watched a video on how to do this*/
+.wave.stlye2{
+    animation: animate2 8s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s ;
+    bottom: 10px;
+
+}
+/* I watched a video on how to do this*/
+.wave.stlye3{
+    animation: animate 14s linear infinite;
+    z-index: 998;
+    opacity: 0.9;
+    animation-delay: -3s ;
+    bottom: 15;
+
+}
+/* I watched a video on how to do this*/
+.wave.stlye2{
+    animation: animate2 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s ;
+    bottom: 20px;
+
+}
+/* However on this part of the code. i used mostly my knowledge and abit of chatgbt*/
+.picture{
+    position: absolute;
+    bottom: 75px;
+    animation: sail 20s linear infinite ;
+    z-index: 1001;
+}
+/* so i have used transform and translate before so i knew how to works. although i wanted to know if chat gbt should simplify the code but it just made the animaition look chunky so i just used my own verison with a bit of the chatgbt. */
+@keyframes sail { 
+0% { transform: translate(0, 0); } 
+10% { transform: translate(100px, -10px); } 
+20% { transform: translate(200px, 0); } 
+30% { transform: translate(400px, 10px); } 
+40% { transform: translate(500px, 0); } 
+50% { transform: translate(600px, -10px); } 
+60% { transform: translate(700px, 0); } 
+70% { transform: translate(800px, 10px); } 
+80% { transform: translate(900px, 0); } 
+90% { transform: translate(1000px, -10px); } 
+100% { transform: translate(1400px, 0); } 
+}
+
+
+
+ 
+
+/* I watched a video on how to do this. This is on the waves animating which i watched a youtube video on how to do it. i will talk about that on readme.*/
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}

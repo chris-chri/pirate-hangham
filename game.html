@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Hangman</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pirate Hangman</h1>
+        <div id="word"></div>
+        <div id="message"></div>
+    <!-- again resizing images is very annoying to do.but the  cool things is that the pirate image is attualy ai genarated. :)  -->
+        <div class="plank">
+            <img id="pirate" src="pirate bro.png" alt="Pirate">
+        </div>
+        <div class = "board">
+            <img src="plank.png" alt="Plank">
+        </div>
+            <!-- There is proably an easy way to do this but i did not have the energy to research on how to do it :} -->
+        <div id="letters">
+            <button class = "letter" data-letter="a">A</button>
+            <button class = "letter" data-letter="b">B </button>
+            <button class = "letter" data-letter="c">C</button>
+            <button class = "letter" data-letter="d">D</button>
+            <button class = "letter" data-letter="e">E</button>
+            <button class = "letter" data-letter="f">F</button>
+            <button class = "letter" data-letter="g">G</button>
+            <button class = "letter" data-letter="h">H</button>
+            <button class = "letter" data-letter="i">I</button>
+            <button class = "letter" data-letter="j">J</button>
+            <button class = "letter" data-letter="k">K</button>
+            <button class = "letter" data-letter="l">L</button>
+            <button class = "letter" data-letter="m">M</button>
+            <button class = "letter" data-letter="n">N</button>
+            <button class = "letter" data-letter="o">O</button>
+            <button class = "letter" data-letter="p">P</button>
+            <button class = "letter" data-letter="q">Q</button>
+            <button class = "letter" data-letter="r">R</button>
+            <button class = "letter" data-letter="s">S</button>
+            <button class = "letter" data-letter="t">T</button>
+            <button class = "letter" data-letter="u">U</button>
+            <button class = "letter" data-letter="v">V</button>
+            <button class = "letter" data-letter="w">W</button>
+            <button class = "letter" data-letter="x">X</button>
+            <button class = "letter" data-letter="y">Y</button>
+            <button class = "letter" data-letter="Z">Z</button>
+        </div>
+        <button id="reset">Reset Game</button>
+    </div>
+    <script src="game.js"></script>
+    <audio src="pirate.mp3" autoplay></audio>
+</body>
+</html>

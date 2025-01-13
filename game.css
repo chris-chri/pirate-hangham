@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(8, 105, 252);
+}
+
+.container {
+    text-align: center; 
+    margin-top: 50px; } 
+
+h1 { 
+    font-size: 2em; 
+    color: white; 
+} 
+
+#word { 
+    font-size: 1.5em; 
+    margin: 20px; } 
+
+#message { 
+    font-size: 1.2em; 
+    color: red; } 
+
+    .plank { 
+        position: absolute; 
+         background: url('plank.png') no-repeat center; 
+         background-size: contain; 
+        } 
+.board{
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+#pirate { 
+    position: absolute;
+     top: 110px;
+    bottom: 0px; 
+     left: 0; 
+     transition: left 0.5s; } 
+
+     @keyframes fall { 
+    0% { transform: rotate(0deg) translateY(0); } 
+     50% { transform: rotate(180deg) translateY(300px); } 
+     100% {transform: rotate(180deg) translateY(-300px);}
+    }
+    
+
+#letters { 
+    margin: 20px;
+     justify-content: space-evenly;
+} 
+
+.letter{
+     font-size: 1em; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    cursor: pointer; 
+    background-color: 
+    white; 
+    border: 2px solid black; 
+    border-radius: 5px;
+}
+
+
+
+button { 
+    font-size: 1em; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    cursor: pointer; }
